@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/empLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Details"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/empNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Name"
+        android:layout_below="@id/empLabel"/>
+
+    <EditText
+        android:id="@+id/empAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@id/empNameEditText"/>
+
+    <EditText
+        android:id="@+id/empPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:layout_below="@id/empAddressEditText"/>
+
+    <EditText
+        android:id="@+id/empSalaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salary"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/empPhoneEditText"/>
+
+    <Button
+        android:id="@+id/addEmpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Employee"
+        android:layout_below="@id/empSalaryEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Department section -->
+    <TextView
+        android:id="@+id/deptLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department Details"
+        android:textSize="20sp"
+        android:layout_below="@id/addEmpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/deptNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department Name"
+        android:layout_below="@id/deptLabel"/>
+
+    <EditText
+        android:id="@+id/deptLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_below="@id/deptNameEditText"/>
+
+    <Button
+        android:id="@+id/addDeptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Department"
+        android:layout_below="@id/deptLocationEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Delete employees by department section -->
+    <TextView
+        android:id="@+id/deleteEmpByDeptLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Employees by Department"
+        android:textSize="20sp"
+        android:layout_below="@id/addDeptButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Spinner
+        android:id="@+id/deleteEmpSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select Employee to Delete"
+        android:layout_below="@id/deleteEmpByDeptLabel"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/deleteEmpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Employee"
+        android:layout_below="@id/deleteEmpSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>

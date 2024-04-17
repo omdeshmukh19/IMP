@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eighteen">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:background="@drawable/shape">
+
+                <ImageView
+                    android:id="@+id/google"
+                    android:layout_width="410dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="google"
+                    app:srcCompat="@drawable/google2e" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape">
+
+                <ImageView
+                    android:id="@+id/geeksforgeeks"
+                    android:layout_width="171dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="geeksforgeeks"
+                    app:srcCompat="@drawable/gg" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:contentDescription="youtube"
+                    android:src="@drawable/youtube" />
+            </TableRow>
+
+        </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
