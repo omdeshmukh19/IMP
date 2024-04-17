@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen;
+        Button one,two,three,four,five,six,mail,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen;
         one=findViewById(R.id.one);
         two=findViewById(R.id.two);
         three=findViewById(R.id.three);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         sixteen=findViewById(R.id.sixteen);
         seventeen=findViewById(R.id.seventeen);
         eighteen=findViewById(R.id.eighteen);
-        nineteen=findViewById(R.id.nineteen);
+        mail=findViewById(R.id.mail);
 
 
         one.setOnClickListener(new View.OnClickListener() {
@@ -177,13 +177,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //       nineteen.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(getApplicationContext(), Nineteen.class);
-//                startActivity(intent);
-//            }
-//        });
+               mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), Mail.class);
+                startActivity(intent);
+            }
+        });
 
 
 

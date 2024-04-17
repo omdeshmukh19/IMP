@@ -348,6 +348,25 @@ it in another view."
         </Button>
     </TableRow>
 
+
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="20. Mail "
+            android:padding="3dip"
+            android:layout_width="0dp"
+            />
+        <Button
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+        </Button>
+    </TableRow>
+
 </TableLayout>
 
 </ScrollView>
